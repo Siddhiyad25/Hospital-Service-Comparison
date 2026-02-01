@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Hospital Service Comparison</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <h1>🏥 Hospital Service Comparison</h1>
+
+  <div class="controls">
+    <select id="serviceSelect" onchange="filterService()">
+      <option value="All">Select Medical Service</option>
+      <option value="Cardiology">Cardiology</option>
+      <option value="Orthopedic">Orthopedic</option>
+      <option value="Cancer Care">Cancer Care</option>
+      <option value="Pediatrics">Pediatrics</option>
+      <option value="General Surgery">General Surgery</option>
+    </select>
+
+    <button onclick="sortByFees()">Sort by Fees</button>
+    <button onclick="sortByRating()">Sort by Rating</button>
+  </div>
+
+  <div id="hospitalCards" class="cards"></div>
+
+  <script src="script.js"></script>
+</body>
+</html>
